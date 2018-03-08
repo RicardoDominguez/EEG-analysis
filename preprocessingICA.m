@@ -31,7 +31,6 @@ highCutoff = 50;  % in Hz
 mkdir(save_folder) % Create folder for the new datasets
 mkdir(plot_folder) % Create folder for the topoplots
 files = dir([data_folder, '*', file_type]);
-files = files(1:3);
 for file = files' % For every data file within the folder
     % Import data
     EEG = pop_importdata('dataformat','ascii','nbchan',0, ...
