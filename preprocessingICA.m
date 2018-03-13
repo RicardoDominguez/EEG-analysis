@@ -50,6 +50,6 @@ for file = files' % For every data file within the folder
     % Plot topoplot and save it
     pop_topoplot(EEG, 0,1:length(EEG.chanlocs),EEG.setname,[2 4],0,'electrodes','on');
     saveas(figure(1), [plot_folder, EEG.setname], 'png')
-    saveas(figure(1), [plot_folder, EEG.setname], 'eps')
+    % saveas(figure(1), [plot_folder, EEG.setname], 'eps')
     close(figure(1))
 end
