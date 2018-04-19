@@ -1,4 +1,6 @@
 Data/
 Plot/
 toolboxes/
-
+Audio/
+Development/
+*.m~
