@@ -10,8 +10,8 @@
 % -------------------------------------------------------------------------
 % Files
 data_folder = 'Data/rawData23-03-18/'; % Folder with the data files
-file_type = '.txt'; % File extension of the data files
-save_folder = 'Data/icaData23-03-18/'; % EEGlab datasets will be saved here
+file_type = '.set'; % File extension of the data files
+save_folder = 'Data/blinks23-03-18/'; % EEGlab datasets will be saved here
 plot_folder = 'Plot/icaTopoplots23-03-18/'; % ICA topoplots will be saved here
 plot_figs = 0; % 1 if you want to plot figures of data
 

@@ -4,3 +4,4 @@ toolboxes/
 Audio/
 Development/
 *.m~
+*.mat

@@ -32,7 +32,7 @@ for file = files' % For every data file within the folder
     alphaIdx = find((freqs>alphaFreq(1)) & (freqs<alphaFreq(2)));
     betaIdx  = find((freqs> betaFreq(1)) & (freqs< betaFreq(2)));
     gammaIdx = find((freqs>gammaFreq(1)) & (freqs<gammaFreq(2)));
-    
+ 
     
     % Compute absolute power
     deltaPower = 10^(mean(spectra(deltaIdx))/10);
