@@ -9,15 +9,15 @@
 % Options you may want to change
 % -------------------------------------------------------------------------
 % Files
-data_folder = 'Data/rawData23-03-18/'; % Folder with the data files
+data_folder = 'Data/rawDataX/'; % Folder with the data files
 file_type = '.set'; % File extension of the data files
-save_folder = 'Data/blinks23-03-18/'; % EEGlab datasets will be saved here
-plot_folder = 'Plot/icaTopoplots23-03-18/'; % ICA topoplots will be saved here
+save_folder = 'Data/icaX/'; % EEGlab datasets will be saved here
+plot_folder = 'Plot/icaTopoplotsX/'; % ICA topoplots will be saved here
 plot_figs = 0; % 1 if you want to plot figures of data
 
 % Original data
 samplingHz = 500; % Original sample frequency in Hz
-channel_file = 'channel23-02-18.ced'; % File containing EEG channel 
+channel_file = 'channelX.ced'; % File containing EEG channel
                                % (created privously by EEGlab)
 
 % Downsampling

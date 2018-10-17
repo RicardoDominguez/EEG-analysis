@@ -4,8 +4,8 @@
 %% ------------------------------------------------------------------------
 % Options you may want to change
 % -------------------------------------------------------------------------
-raw_folder = 'Data/rawFiles23-03-18/'; % Folder of the raw files
-data_folder = 'Data/rawData23-03-18/'; % Folder for new the data files
+raw_folder = 'Data/rawFilesX/'; % Folder of the raw files
+data_folder = 'Data/rawDataX/'; % Folder for new the data files
 file_type = '.easy'; % File extension of the raw files
 new_file_extension = '.txt'; % File extension for the new data files
 relevant_channels = 1:8; % Only relevant channels are channels 1 to 8

@@ -4,7 +4,7 @@ Scripts to automate the preprocessing and analysis of EEG signals using [EEGlab]
 
 - [Functionality](#functionality)
 - [Step by step use case example](#step-by-step-use-case-example)
-- [Tips for rejecting ICA decompositions](#tips-for-rejecting-ICA-decompositions)
+- [Tips for rejecting ICA decompositions](#tips-for-rejecting-ica-decompositions)
 
 These scripts were developed by [Ricardo Dominguez Olmedo](https://github.com/RicardoDominguez) during a placement at the Physiological Signals and Systems Laboratory, Department of Automatic Control and Systems Engineering, The University of Sheffield.
 
@@ -38,7 +38,7 @@ Example of using the scripts to preprocess, apply ICA and extract the spectral p
     Ensure you have created a file with the EEG cannel locations (using the EEGlab GUI Edit/Channel Locations) and said file is located in ``Data/rawDataX``.
     The folder created ``/Data/icaX`` will contains EEGlab ``.set`` files.
 
- 5. Run [ICArejectChannels.m](ICArejectChannels.m) to reject the individual components extracted using ICA. Individual windows will apear in the screen with information about the components found using ICA.
+ 5. Run [ICArejectChannels.m](ICArejectChannels.m) to reject the individual components extracted using ICA. Individual windows will apear in the screen with information about the components found using ICA. The pruned data will be stored at ``/Data/pruneX``.
 
  6. Run [computeSpectralPowers.m](computeSpectralPowers.m) to compute the spectral powers of the clean signals. The values for each dataset are stored at ``/Data/powersX`` as ``.txt`` files.
 
