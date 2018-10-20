@@ -12,12 +12,12 @@ These scripts were developed by [Ricardo Dominguez Olmedo](https://github.com/Ri
 
 Main functionality included:
  * Preprocessing multiple data files by removing data at the start/end of the experiment, downsampling and bandpass filtering. Refer to [*convertRawFile2RawData.m*](convertRawFile2RawData.m) and [*preprocessingICA.m*](preprocessingICA.m).
- * Applying independent component analysis simulataneously to several data files, allowing the bulk of the computation to be performed at once. Thereafter the signal subcomponents of each data file can be examined and rejected if believed to be spurious. Refer to [*preprocessingICA.m*](preprocessingICA.m) and [*ICArejectChannels.m*](ICArejectChannels.m).
+ * Applying independent component analysis simultaneously to several data files, allowing the bulk of the computation to be performed at once. Thereafter the signal subcomponents of each data file can be examined and rejected if believed to be spurious. Refer to [*preprocessingICA.m*](preprocessingICA.m) and [*ICArejectChannels.m*](ICArejectChannels.m).
  * Computing automatically the spectral powers of multiple EEG data files. Refer to [*computeSpectralPowers.m*](computeSpectralPowers.m).
 
 Additional functionality included (used to measure cognitive workload):
 * Computing average blinking frequency using the [Blinker](https://github.com/VisLab/EEG-Blinks) toolbox. Refer to [*processBlinkData.m*](processBlinkData.m).
-* Analysing audio of a person counting out loud to measure word frequency and number of errors (not autmated). Refer to [*audioProcessCountingUp.m*](audioProcessCountingUp.m).
+* Analysing audio of a person counting out loud to measure word frequency and number of errors (not automated). Refer to [*audioProcessCountingUp.m*](audioProcessCountingUp.m).
 
 # Step by step use case example
 
@@ -33,20 +33,20 @@ Example of using the scripts to preprocess, apply ICA and extract the spectral p
     Ensure that the folder ``Data`` and its subfolders are added to the path.
     The new folder contains .txt files with only the relevant EEG data as columns.
 
- 4. Run [preprocessingICA.m](preprocessingICA.m) to preprocess the data and apply independen component analysis.
+ 4. Run [preprocessingICA.m](preprocessingICA.m) to preprocess the data and apply independent component analysis.
     Ensure that the folder ``toolboxes/EEGlab`` and its subfolders are added to the path.
-    Ensure you have created a file with the EEG cannel locations (using the EEGlab GUI Edit/Channel Locations) and said file is located in ``Data/rawDataX``.
+    Ensure you have created a file with the EEG channel locations (using the EEGlab GUI Edit/Channel Locations) and said file is located in ``Data/rawDataX``.
     The folder created ``/Data/icaX`` will contains EEGlab ``.set`` files.
 
- 5. Run [ICArejectChannels.m](ICArejectChannels.m) to reject the individual components extracted using ICA. Individual windows will apear in the screen with information about the components found using ICA. The pruned data will be stored at ``/Data/pruneX``.
+ 5. Run [ICArejectChannels.m](ICArejectChannels.m) to reject the individual components extracted using ICA. Individual windows will appear in the screen with information about the components found using ICA. The pruned data will be stored at ``/Data/pruneX``.
 
  6. Run [computeSpectralPowers.m](computeSpectralPowers.m) to compute the spectral powers of the clean signals. The values for each dataset are stored at ``/Data/powersX`` as ``.txt`` files.
 
 # Tips for rejecting ICA decompositions
 
-Only congitively related signals should not be rejected.
+Only cognitively related signals should not be rejected.
 
-Rules ofd thumb to determine if a component is:
+Rules of thumb to determine if a component is:
  * a) Cognitively related
    - Dipole-like scalp maps
    - Spectral peaks at typical EEG frequencies (5 to 20 Hz)
